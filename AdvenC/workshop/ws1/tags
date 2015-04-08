@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+bigint	BigInt.c	/^struct bigint {$/;"	s	file:
+bigint	ws1.c	/^struct bigint {$/;"	s	file:
+compare	ws1.c	/^int compare(char *a, int al, char *b, int bl)$/;"	f
+division	BigInt.c	/^void division(char *a, char *b, char *buf)$/;"	f
+division	ws1.c	/^void division(char *a, int al, char *b, int bl, char *buf)$/;"	f
+mag	BigInt.c	/^				char *mag;$/;"	m	struct:bigint	file:
+mag	ws1.c	/^				char *mag;$/;"	m	struct:bigint	file:
+mag_len	BigInt.c	/^				int mag_len;$/;"	m	struct:bigint	file:
+mag_len	ws1.c	/^				int mag_len;$/;"	m	struct:bigint	file:
+main	BigInt.c	/^int main()$/;"	f
+main	ws1.c	/^int main()$/;"	f
+max	BigInt.c	6;"	d	file:
+max	ws1.c	6;"	d	file:
+min	BigInt.c	7;"	d	file:
+min	ws1.c	7;"	d	file:
+minus	BigInt.c	/^void minus(char *a, int al, char *b, int bl, char *buf, int *sign)$/;"	f
+minus	ws1.c	/^void minus(char *a, int al, char *b, int bl, char *buf, int *sign)$/;"	f
+multiple	BigInt.c	/^void multiple(char *a, int al,  char *b, int bl, char *buf)$/;"	f
+multiple	ws1.c	/^void multiple(char *a, int al,  char *b, int bl, char *buf)$/;"	f
+op1	BigInt.c	/^struct bigint op1, op2;$/;"	v	typeref:struct:bigint
+op1	ws1.c	/^struct bigint op1, op2;$/;"	v	typeref:struct:bigint
+op2	BigInt.c	/^struct bigint op1, op2;$/;"	v	typeref:struct:
+op2	ws1.c	/^struct bigint op1, op2;$/;"	v	typeref:struct:
+operation	BigInt.c	/^char operation;$/;"	v
+operation	ws1.c	/^char operation;$/;"	v
+plus	BigInt.c	/^void plus(char *a, int al, char *b, int bl, char *buf)$/;"	f
+plus	ws1.c	/^void plus(char *a, int al, char *b, int bl, char *buf)$/;"	f
+reverse	BigInt.c	/^void reverse(char *buf)$/;"	f
+reverse	ws1.c	/^void reverse(char *buf)$/;"	f
+sign	BigInt.c	/^				int sign;$/;"	m	struct:bigint	file:
+sign	ws1.c	/^				int sign;$/;"	m	struct:bigint	file:

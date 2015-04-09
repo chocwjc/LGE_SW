@@ -5,6 +5,12 @@
 #include <errno.h>
 #include <signal.h>
 
+void my_sig(int signo)
+{
+	printf("my_sig(%d)\n", signo);
+	waitpid(-1, 0, WNOHANG);
+}
+
 int main()
 {
 	pid_t pid;
@@ -25,8 +31,10 @@ int main()
 		}
 	}
 
+	signal(SIGCHLD, my_sig);
+
 	for (j = 0; j < 10; j++) {
-		sleep(1);
+		sleep(5);
 		printf("parent\n");
 	}
 	return 0;

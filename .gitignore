@@ -3,4 +3,5 @@
 *.o
 *.out
 *test*
-
+tag*
+cscope*

@@ -9,20 +9,25 @@ int global = 0;
 
 void *foo(void *data)
 {
-	pthread_mutex_lock(&mutex);
-	sleep(3);
+	sleep(1);
 	global++;
 	pthread_cond_signal(&cond);
-	pthread_mutex_unlock(&mutex);
 	return 0;
 }
 
 void *bar(void *data)
 {
+	printf("Bar start\n");
 	pthread_mutex_lock(&mutex);
+	printf("Bar Lock acquire\n");
+
+	printf("Bar start wait for signal\n");
 	pthread_cond_wait(&cond, &mutex);
+	printf("Bar signaled\n");
+
 	printf("Global = %d\n", global);
 	pthread_mutex_unlock(&mutex);
+	printf("Bar Lock release\n");
 	return 0;
 }
 

@@ -14,5 +14,9 @@ int main()
 
 	for (i=0; i < sizeof (numbers)/4; i++) 
 		printf("%d\n",*(int*)flex_array_get(fa, i));
+
+	
+	flex_array_free(fa);
+
 	return 0;
 }

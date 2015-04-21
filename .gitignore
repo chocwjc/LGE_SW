@@ -2,7 +2,6 @@
 *.swo
 *.o
 *.out
-*test*
 tag*
 cscope*
 *.symvers

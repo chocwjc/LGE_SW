@@ -1,0 +1,1 @@
+cmd_/home/paldad/test/modules/compile/module2.ko := aarch64-linux-gnu-ld -EL -r  -T /usr/src/tegra/scripts/module-common.lds --build-id  -o /home/paldad/test/modules/compile/module2.ko /home/paldad/test/modules/compile/module2.o /home/paldad/test/modules/compile/module2.mod.o

@@ -1,0 +1,1 @@
+cmd_/home/paldad/test/modules/ws/my_ps.ko := aarch64-linux-gnu-ld -EL -r  -T /usr/src/tegra/scripts/module-common.lds --build-id  -o /home/paldad/test/modules/ws/my_ps.ko /home/paldad/test/modules/ws/my_ps.o /home/paldad/test/modules/ws/my_ps.mod.o

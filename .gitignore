@@ -5,3 +5,7 @@
 *test*
 tag*
 cscope*
+*.symvers
+*.ko
+*.mod.c
+*.order

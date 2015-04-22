@@ -1,0 +1,239 @@
+\hypertarget{binder_8h}{\section{binder.\-h File Reference}
+\label{binder_8h}\index{binder.\-h@{binder.\-h}}
+}
+{\ttfamily \#include $<$sys/types.\-h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\-h$>$}\\*
+{\ttfamily \#include $<$fcntl.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$errno.\-h$>$}\\*
+Include dependency graph for binder.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{binder_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classProcessState}{Process\-State}
+\item 
+class \hyperlink{classIBinder}{I\-Binder}
+\item 
+class \hyperlink{classBBinder}{B\-Binder}
+\item 
+class \hyperlink{classBnInterface}{Bn\-Interface$<$ I\-N\-T\-E\-R\-F\-A\-C\-E $>$}
+\item 
+class \hyperlink{classIPCThreadState}{I\-P\-C\-Thread\-State}
+\item 
+class \hyperlink{classBpBinder}{Bp\-Binder}
+\item 
+class \hyperlink{classBpRefBase}{Bp\-Ref\-Base}
+\item 
+class \hyperlink{classIInterface}{I\-Interface}
+\item 
+class \hyperlink{classILedService}{I\-Led\-Service}
+\item 
+class \hyperlink{classBpInterface}{Bp\-Interface$<$ I\-N\-T\-E\-R\-F\-A\-C\-E $>$}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{binder_8h_affb243347b149536c185539e260a4e5b}{B\-I\-N\-D\-E\-R\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-A\-N\-A\-G\-E\-R}~0
+\item 
+\#define \hyperlink{binder_8h_a94901f8e52275fe27b50b94f8b2602cb}{S\-V\-C\-\_\-\-M\-G\-R\-\_\-\-A\-D\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E}~0x\-F\-F\-F\-F\-F\-F\-F0
+\item 
+\#define \hyperlink{binder_8h_ac86e2cbabb68dfb96c6de13be54c09de}{S\-V\-C\-\_\-\-M\-G\-R\-\_\-\-C\-H\-E\-C\-K\-\_\-\-S\-E\-R\-V\-I\-C\-E}~0x\-F\-F\-F\-F\-F\-F\-F1
+\item 
+\#define \hyperlink{binder_8h_aa04c9b86c0af7318cda857aa84cc28b8}{B\-I\-N\-D\-E\-R\-\_\-\-P\-A\-T\-H}~\char`\"{}/tmp/binder\char`\"{}
+\item 
+\#define \hyperlink{binder_8h_af5ab3506a20d58ad1faf58a481207869}{D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-T\-A\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E}(I\-N\-T\-E\-R\-F\-A\-C\-E)~static I\#\#I\-N\-T\-E\-R\-F\-A\-C\-E $\ast$as\-Interface(\hyperlink{classIBinder}{I\-Binder} $\ast$p)
+\item 
+\#define \hyperlink{binder_8h_ac30579507560c91b8b5249230f6bab4b}{I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-E\-T\-A\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E}(I\-N\-T\-E\-R\-F\-A\-C\-E)~I\#\#I\-N\-T\-E\-R\-F\-A\-C\-E $\ast$I\#\#I\-N\-T\-E\-R\-F\-A\-C\-E\-::as\-Interface(\hyperlink{classIBinder}{I\-Binder} $\ast$p) \{ return new Bp\#\#I\-N\-T\-E\-R\-F\-A\-C\-E(p); \}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int($\ast$ \hyperlink{binder_8h_a1746f77853bbabef2a622bc86f53a4ad}{binder\-\_\-handler} )(int code, int msg, int $\ast$reply)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{binder_8h_aa95623d68fe666d523c2f7b31ff6e775}{binder\-\_\-open} (int mapsize)
+\item 
+int \hyperlink{binder_8h_a353da2e2685b66ecd6e4457c1ff3ae45}{create\-\_\-pipe} (const char $\ast$path, int mode)
+\item 
+int \hyperlink{binder_8h_a100a49cf142a7bbc7a93fe120ae2e973}{binder\-\_\-call} (int binder, int $\ast$msg, int $\ast$reply, int target, int code)
+\item 
+void \hyperlink{binder_8h_a3f3d2bf50652a6baa7de13ac4aceb7a5}{binder\-\_\-loop} (int binder, \hyperlink{binder_8h_a1746f77853bbabef2a622bc86f53a4ad}{binder\-\_\-handler} func)
+\item 
+void \hyperlink{binder_8h_af566fd57f21343a030ff8876cfa65950}{add\-Service} (const char $\ast$name, \hyperlink{classIBinder}{I\-Binder} $\ast$p)
+\item 
+\hyperlink{classIBinder}{I\-Binder} $\ast$ \hyperlink{binder_8h_a51fbbc00e7e7bd7953d3267af704a868}{get\-Service} (const char $\ast$name)
+\item 
+{\footnotesize template$<$typename I\-N\-T\-E\-R\-F\-A\-C\-E $>$ }\\I\-N\-T\-E\-R\-F\-A\-C\-E $\ast$ \hyperlink{binder_8h_a90e858387208e85b605a427d03a77e4d}{interface\-\_\-cast} (\hyperlink{classIBinder}{I\-Binder} $\ast$p)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{binder_8h_ae948c0e495cb4246e8f4de881699c194}{server\-\_\-init} = false
+\item 
+bool \hyperlink{binder_8h_aa0df924d0a93af9346ecfa560b7ed264}{client\-\_\-init} = false
+\item 
+int \hyperlink{binder_8h_a975a11a8517c6a028111ed3694100ac0}{binder\-\_\-fd} = 0
+\item 
+const char $\ast$ \hyperlink{binder_8h_ade69e82a5c88f18b279db12ba553d83f}{service\-\_\-name}
+\item 
+\hyperlink{classIBinder}{I\-Binder} $\ast$ \hyperlink{binder_8h_a43a7671f7a99c62d39930b130991a3e9}{server}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{binder_8h_aa04c9b86c0af7318cda857aa84cc28b8}{\index{binder.\-h@{binder.\-h}!B\-I\-N\-D\-E\-R\-\_\-\-P\-A\-T\-H@{B\-I\-N\-D\-E\-R\-\_\-\-P\-A\-T\-H}}
+\index{B\-I\-N\-D\-E\-R\-\_\-\-P\-A\-T\-H@{B\-I\-N\-D\-E\-R\-\_\-\-P\-A\-T\-H}!binder.h@{binder.\-h}}
+\subsubsection[{B\-I\-N\-D\-E\-R\-\_\-\-P\-A\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-I\-N\-D\-E\-R\-\_\-\-P\-A\-T\-H~\char`\"{}/tmp/binder\char`\"{}}}\label{binder_8h_aa04c9b86c0af7318cda857aa84cc28b8}
+\hypertarget{binder_8h_affb243347b149536c185539e260a4e5b}{\index{binder.\-h@{binder.\-h}!B\-I\-N\-D\-E\-R\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-A\-N\-A\-G\-E\-R@{B\-I\-N\-D\-E\-R\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-A\-N\-A\-G\-E\-R}}
+\index{B\-I\-N\-D\-E\-R\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-A\-N\-A\-G\-E\-R@{B\-I\-N\-D\-E\-R\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-A\-N\-A\-G\-E\-R}!binder.h@{binder.\-h}}
+\subsubsection[{B\-I\-N\-D\-E\-R\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-A\-N\-A\-G\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-I\-N\-D\-E\-R\-\_\-\-S\-E\-R\-V\-I\-C\-E\-\_\-\-M\-A\-N\-A\-G\-E\-R~0}}\label{binder_8h_affb243347b149536c185539e260a4e5b}
+\hypertarget{binder_8h_af5ab3506a20d58ad1faf58a481207869}{\index{binder.\-h@{binder.\-h}!D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-T\-A\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E@{D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-T\-A\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E}}
+\index{D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-T\-A\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E@{D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-T\-A\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E}!binder.h@{binder.\-h}}
+\subsubsection[{D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-T\-A\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-C\-L\-A\-R\-E\-\_\-\-M\-E\-T\-A\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E(
+\begin{DoxyParamCaption}
+\item[{}]{I\-N\-T\-E\-R\-F\-A\-C\-E}
+\end{DoxyParamCaption}
+)~static I\#\#I\-N\-T\-E\-R\-F\-A\-C\-E $\ast$as\-Interface({\bf I\-Binder} $\ast$p)}}\label{binder_8h_af5ab3506a20d58ad1faf58a481207869}
+\hypertarget{binder_8h_ac30579507560c91b8b5249230f6bab4b}{\index{binder.\-h@{binder.\-h}!I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-E\-T\-A\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E@{I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-E\-T\-A\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E}}
+\index{I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-E\-T\-A\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E@{I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-E\-T\-A\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E}!binder.h@{binder.\-h}}
+\subsubsection[{I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-E\-T\-A\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-E\-T\-A\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E(
+\begin{DoxyParamCaption}
+\item[{}]{I\-N\-T\-E\-R\-F\-A\-C\-E}
+\end{DoxyParamCaption}
+)~I\#\#I\-N\-T\-E\-R\-F\-A\-C\-E $\ast$I\#\#I\-N\-T\-E\-R\-F\-A\-C\-E\-::as\-Interface({\bf I\-Binder} $\ast$p) \{ return new Bp\#\#I\-N\-T\-E\-R\-F\-A\-C\-E(p); \}}}\label{binder_8h_ac30579507560c91b8b5249230f6bab4b}
+\hypertarget{binder_8h_a94901f8e52275fe27b50b94f8b2602cb}{\index{binder.\-h@{binder.\-h}!S\-V\-C\-\_\-\-M\-G\-R\-\_\-\-A\-D\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E@{S\-V\-C\-\_\-\-M\-G\-R\-\_\-\-A\-D\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E}}
+\index{S\-V\-C\-\_\-\-M\-G\-R\-\_\-\-A\-D\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E@{S\-V\-C\-\_\-\-M\-G\-R\-\_\-\-A\-D\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E}!binder.h@{binder.\-h}}
+\subsubsection[{S\-V\-C\-\_\-\-M\-G\-R\-\_\-\-A\-D\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-V\-C\-\_\-\-M\-G\-R\-\_\-\-A\-D\-D\-\_\-\-S\-E\-R\-V\-I\-C\-E~0x\-F\-F\-F\-F\-F\-F\-F0}}\label{binder_8h_a94901f8e52275fe27b50b94f8b2602cb}
+\hypertarget{binder_8h_ac86e2cbabb68dfb96c6de13be54c09de}{\index{binder.\-h@{binder.\-h}!S\-V\-C\-\_\-\-M\-G\-R\-\_\-\-C\-H\-E\-C\-K\-\_\-\-S\-E\-R\-V\-I\-C\-E@{S\-V\-C\-\_\-\-M\-G\-R\-\_\-\-C\-H\-E\-C\-K\-\_\-\-S\-E\-R\-V\-I\-C\-E}}
+\index{S\-V\-C\-\_\-\-M\-G\-R\-\_\-\-C\-H\-E\-C\-K\-\_\-\-S\-E\-R\-V\-I\-C\-E@{S\-V\-C\-\_\-\-M\-G\-R\-\_\-\-C\-H\-E\-C\-K\-\_\-\-S\-E\-R\-V\-I\-C\-E}!binder.h@{binder.\-h}}
+\subsubsection[{S\-V\-C\-\_\-\-M\-G\-R\-\_\-\-C\-H\-E\-C\-K\-\_\-\-S\-E\-R\-V\-I\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-V\-C\-\_\-\-M\-G\-R\-\_\-\-C\-H\-E\-C\-K\-\_\-\-S\-E\-R\-V\-I\-C\-E~0x\-F\-F\-F\-F\-F\-F\-F1}}\label{binder_8h_ac86e2cbabb68dfb96c6de13be54c09de}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{binder_8h_a1746f77853bbabef2a622bc86f53a4ad}{\index{binder.\-h@{binder.\-h}!binder\-\_\-handler@{binder\-\_\-handler}}
+\index{binder\-\_\-handler@{binder\-\_\-handler}!binder.h@{binder.\-h}}
+\subsubsection[{binder\-\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ binder\-\_\-handler)(int code, int msg, int $\ast$reply)}}\label{binder_8h_a1746f77853bbabef2a622bc86f53a4ad}
+
+
+\subsection{Function Documentation}
+\hypertarget{binder_8h_af566fd57f21343a030ff8876cfa65950}{\index{binder.\-h@{binder.\-h}!add\-Service@{add\-Service}}
+\index{add\-Service@{add\-Service}!binder.h@{binder.\-h}}
+\subsubsection[{add\-Service}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Service (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf I\-Binder} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{binder_8h_af566fd57f21343a030ff8876cfa65950}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{binder_8h_af566fd57f21343a030ff8876cfa65950_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{binder_8h_a100a49cf142a7bbc7a93fe120ae2e973}{\index{binder.\-h@{binder.\-h}!binder\-\_\-call@{binder\-\_\-call}}
+\index{binder\-\_\-call@{binder\-\_\-call}!binder.h@{binder.\-h}}
+\subsubsection[{binder\-\_\-call}]{\setlength{\rightskip}{0pt plus 5cm}int binder\-\_\-call (
+\begin{DoxyParamCaption}
+\item[{int}]{binder, }
+\item[{int $\ast$}]{msg, }
+\item[{int $\ast$}]{reply, }
+\item[{int}]{target, }
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)}}\label{binder_8h_a100a49cf142a7bbc7a93fe120ae2e973}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{binder_8h_a100a49cf142a7bbc7a93fe120ae2e973_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{binder_8h_a3f3d2bf50652a6baa7de13ac4aceb7a5}{\index{binder.\-h@{binder.\-h}!binder\-\_\-loop@{binder\-\_\-loop}}
+\index{binder\-\_\-loop@{binder\-\_\-loop}!binder.h@{binder.\-h}}
+\subsubsection[{binder\-\_\-loop}]{\setlength{\rightskip}{0pt plus 5cm}void binder\-\_\-loop (
+\begin{DoxyParamCaption}
+\item[{int}]{binder, }
+\item[{{\bf binder\-\_\-handler}}]{func}
+\end{DoxyParamCaption}
+)}}\label{binder_8h_a3f3d2bf50652a6baa7de13ac4aceb7a5}
+\hypertarget{binder_8h_aa95623d68fe666d523c2f7b31ff6e775}{\index{binder.\-h@{binder.\-h}!binder\-\_\-open@{binder\-\_\-open}}
+\index{binder\-\_\-open@{binder\-\_\-open}!binder.h@{binder.\-h}}
+\subsubsection[{binder\-\_\-open}]{\setlength{\rightskip}{0pt plus 5cm}int binder\-\_\-open (
+\begin{DoxyParamCaption}
+\item[{int}]{mapsize}
+\end{DoxyParamCaption}
+)}}\label{binder_8h_aa95623d68fe666d523c2f7b31ff6e775}
+\hypertarget{binder_8h_a353da2e2685b66ecd6e4457c1ff3ae45}{\index{binder.\-h@{binder.\-h}!create\-\_\-pipe@{create\-\_\-pipe}}
+\index{create\-\_\-pipe@{create\-\_\-pipe}!binder.h@{binder.\-h}}
+\subsubsection[{create\-\_\-pipe}]{\setlength{\rightskip}{0pt plus 5cm}int create\-\_\-pipe (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path, }
+\item[{int}]{mode}
+\end{DoxyParamCaption}
+)}}\label{binder_8h_a353da2e2685b66ecd6e4457c1ff3ae45}
+\hypertarget{binder_8h_a51fbbc00e7e7bd7953d3267af704a868}{\index{binder.\-h@{binder.\-h}!get\-Service@{get\-Service}}
+\index{get\-Service@{get\-Service}!binder.h@{binder.\-h}}
+\subsubsection[{get\-Service}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-Binder}$\ast$ get\-Service (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{binder_8h_a51fbbc00e7e7bd7953d3267af704a868}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{binder_8h_a51fbbc00e7e7bd7953d3267af704a868_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{binder_8h_a90e858387208e85b605a427d03a77e4d}{\index{binder.\-h@{binder.\-h}!interface\-\_\-cast@{interface\-\_\-cast}}
+\index{interface\-\_\-cast@{interface\-\_\-cast}!binder.h@{binder.\-h}}
+\subsubsection[{interface\-\_\-cast}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename I\-N\-T\-E\-R\-F\-A\-C\-E $>$ I\-N\-T\-E\-R\-F\-A\-C\-E$\ast$ interface\-\_\-cast (
+\begin{DoxyParamCaption}
+\item[{{\bf I\-Binder} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{binder_8h_a90e858387208e85b605a427d03a77e4d}
+
+
+\subsection{Variable Documentation}
+\hypertarget{binder_8h_a975a11a8517c6a028111ed3694100ac0}{\index{binder.\-h@{binder.\-h}!binder\-\_\-fd@{binder\-\_\-fd}}
+\index{binder\-\_\-fd@{binder\-\_\-fd}!binder.h@{binder.\-h}}
+\subsubsection[{binder\-\_\-fd}]{\setlength{\rightskip}{0pt plus 5cm}int binder\-\_\-fd = 0}}\label{binder_8h_a975a11a8517c6a028111ed3694100ac0}
+\hypertarget{binder_8h_aa0df924d0a93af9346ecfa560b7ed264}{\index{binder.\-h@{binder.\-h}!client\-\_\-init@{client\-\_\-init}}
+\index{client\-\_\-init@{client\-\_\-init}!binder.h@{binder.\-h}}
+\subsubsection[{client\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}bool client\-\_\-init = false}}\label{binder_8h_aa0df924d0a93af9346ecfa560b7ed264}
+\hypertarget{binder_8h_a43a7671f7a99c62d39930b130991a3e9}{\index{binder.\-h@{binder.\-h}!server@{server}}
+\index{server@{server}!binder.h@{binder.\-h}}
+\subsubsection[{server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-Binder}$\ast$ server}}\label{binder_8h_a43a7671f7a99c62d39930b130991a3e9}
+\hypertarget{binder_8h_ae948c0e495cb4246e8f4de881699c194}{\index{binder.\-h@{binder.\-h}!server\-\_\-init@{server\-\_\-init}}
+\index{server\-\_\-init@{server\-\_\-init}!binder.h@{binder.\-h}}
+\subsubsection[{server\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}bool server\-\_\-init = false}}\label{binder_8h_ae948c0e495cb4246e8f4de881699c194}
+\hypertarget{binder_8h_ade69e82a5c88f18b279db12ba553d83f}{\index{binder.\-h@{binder.\-h}!service\-\_\-name@{service\-\_\-name}}
+\index{service\-\_\-name@{service\-\_\-name}!binder.h@{binder.\-h}}
+\subsubsection[{service\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ service\-\_\-name}}\label{binder_8h_ade69e82a5c88f18b279db12ba553d83f}

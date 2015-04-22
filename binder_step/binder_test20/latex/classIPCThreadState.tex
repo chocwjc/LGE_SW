@@ -1,0 +1,172 @@
+\hypertarget{classIPCThreadState}{\section{I\-P\-C\-Thread\-State Class Reference}
+\label{classIPCThreadState}\index{I\-P\-C\-Thread\-State@{I\-P\-C\-Thread\-State}}
+}
+
+
+{\ttfamily \#include $<$binder.\-h$>$}
+
+
+
+Collaboration diagram for I\-P\-C\-Thread\-State\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classIPCThreadState__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classIPCThreadState_a12423983ca5df01ecb79163ea3e0df82}{transact} (int handle, int code, int $\ast$msg, int $\ast$reply)
+\item 
+void \hyperlink{classIPCThreadState_a68fd78989dbd0ac468b6f9f0cd17b5a8}{join\-Thread\-Pool} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classIPCThreadState}{I\-P\-C\-Thread\-State} $\ast$ \hyperlink{classIPCThreadState_a42c7daa79fc1364b3bd3ac8b0920bf0e}{self} ()
+\item 
+static int \hyperlink{classIPCThreadState_a37c4e27f1770cc5ca7ebd8ed330b4438}{my\-\_\-handler} (int code, int msg, int $\ast$reply)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIPCThreadState_a6e1a9d9bc01c877747ecae8df73bd14e}{I\-P\-C\-Thread\-State} ()
+\item 
+\hyperlink{classIPCThreadState_a368b35eb534b0b49e5c0b522d98a0a6d}{I\-P\-C\-Thread\-State} (const \hyperlink{classIPCThreadState}{I\-P\-C\-Thread\-State} $\ast$i)
+\item 
+\hyperlink{classIPCThreadState}{I\-P\-C\-Thread\-State} \& \hyperlink{classIPCThreadState_a4f68d05d2665e30b2d43479feba7f944}{operator=} (const \hyperlink{classIPCThreadState}{I\-P\-C\-Thread\-State} $\ast$i)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProcessState}{Process\-State} $\ast$ \hyperlink{classIPCThreadState_aefae3c0f96244ce87f9289defee13b54}{m\-Process}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classIPCThreadState}{I\-P\-C\-Thread\-State} $\ast$ \hyperlink{classIPCThreadState_a54fefc86880e0e140d40e9aa7247cc47}{i\-Instance} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classIPCThreadState_a6e1a9d9bc01c877747ecae8df73bd14e}{\index{I\-P\-C\-Thread\-State@{I\-P\-C\-Thread\-State}!I\-P\-C\-Thread\-State@{I\-P\-C\-Thread\-State}}
+\index{I\-P\-C\-Thread\-State@{I\-P\-C\-Thread\-State}!IPCThreadState@{I\-P\-C\-Thread\-State}}
+\subsubsection[{I\-P\-C\-Thread\-State}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-C\-Thread\-State\-::\-I\-P\-C\-Thread\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classIPCThreadState_a6e1a9d9bc01c877747ecae8df73bd14e}
+\hypertarget{classIPCThreadState_a368b35eb534b0b49e5c0b522d98a0a6d}{\index{I\-P\-C\-Thread\-State@{I\-P\-C\-Thread\-State}!I\-P\-C\-Thread\-State@{I\-P\-C\-Thread\-State}}
+\index{I\-P\-C\-Thread\-State@{I\-P\-C\-Thread\-State}!IPCThreadState@{I\-P\-C\-Thread\-State}}
+\subsubsection[{I\-P\-C\-Thread\-State}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-C\-Thread\-State\-::\-I\-P\-C\-Thread\-State (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\-P\-C\-Thread\-State} $\ast$}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classIPCThreadState_a368b35eb534b0b49e5c0b522d98a0a6d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classIPCThreadState_a68fd78989dbd0ac468b6f9f0cd17b5a8}{\index{I\-P\-C\-Thread\-State@{I\-P\-C\-Thread\-State}!join\-Thread\-Pool@{join\-Thread\-Pool}}
+\index{join\-Thread\-Pool@{join\-Thread\-Pool}!IPCThreadState@{I\-P\-C\-Thread\-State}}
+\subsubsection[{join\-Thread\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}void I\-P\-C\-Thread\-State\-::join\-Thread\-Pool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classIPCThreadState_a68fd78989dbd0ac468b6f9f0cd17b5a8}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIPCThreadState_a68fd78989dbd0ac468b6f9f0cd17b5a8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classIPCThreadState_a37c4e27f1770cc5ca7ebd8ed330b4438}{\index{I\-P\-C\-Thread\-State@{I\-P\-C\-Thread\-State}!my\-\_\-handler@{my\-\_\-handler}}
+\index{my\-\_\-handler@{my\-\_\-handler}!IPCThreadState@{I\-P\-C\-Thread\-State}}
+\subsubsection[{my\-\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}static int I\-P\-C\-Thread\-State\-::my\-\_\-handler (
+\begin{DoxyParamCaption}
+\item[{int}]{code, }
+\item[{int}]{msg, }
+\item[{int $\ast$}]{reply}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classIPCThreadState_a37c4e27f1770cc5ca7ebd8ed330b4438}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classIPCThreadState_a37c4e27f1770cc5ca7ebd8ed330b4438_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classIPCThreadState_a4f68d05d2665e30b2d43479feba7f944}{\index{I\-P\-C\-Thread\-State@{I\-P\-C\-Thread\-State}!operator=@{operator=}}
+\index{operator=@{operator=}!IPCThreadState@{I\-P\-C\-Thread\-State}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-P\-C\-Thread\-State}\& I\-P\-C\-Thread\-State\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\-P\-C\-Thread\-State} $\ast$}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classIPCThreadState_a4f68d05d2665e30b2d43479feba7f944}
+\hypertarget{classIPCThreadState_a42c7daa79fc1364b3bd3ac8b0920bf0e}{\index{I\-P\-C\-Thread\-State@{I\-P\-C\-Thread\-State}!self@{self}}
+\index{self@{self}!IPCThreadState@{I\-P\-C\-Thread\-State}}
+\subsubsection[{self}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf I\-P\-C\-Thread\-State}$\ast$ I\-P\-C\-Thread\-State\-::self (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classIPCThreadState_a42c7daa79fc1364b3bd3ac8b0920bf0e}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIPCThreadState_a42c7daa79fc1364b3bd3ac8b0920bf0e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classIPCThreadState_a12423983ca5df01ecb79163ea3e0df82}{\index{I\-P\-C\-Thread\-State@{I\-P\-C\-Thread\-State}!transact@{transact}}
+\index{transact@{transact}!IPCThreadState@{I\-P\-C\-Thread\-State}}
+\subsubsection[{transact}]{\setlength{\rightskip}{0pt plus 5cm}int I\-P\-C\-Thread\-State\-::transact (
+\begin{DoxyParamCaption}
+\item[{int}]{handle, }
+\item[{int}]{code, }
+\item[{int $\ast$}]{msg, }
+\item[{int $\ast$}]{reply}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classIPCThreadState_a12423983ca5df01ecb79163ea3e0df82}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIPCThreadState_a12423983ca5df01ecb79163ea3e0df82_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classIPCThreadState_a54fefc86880e0e140d40e9aa7247cc47}{\index{I\-P\-C\-Thread\-State@{I\-P\-C\-Thread\-State}!i\-Instance@{i\-Instance}}
+\index{i\-Instance@{i\-Instance}!IPCThreadState@{I\-P\-C\-Thread\-State}}
+\subsubsection[{i\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-P\-C\-Thread\-State} $\ast$ I\-P\-C\-Thread\-State\-::i\-Instance = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classIPCThreadState_a54fefc86880e0e140d40e9aa7247cc47}
+\hypertarget{classIPCThreadState_aefae3c0f96244ce87f9289defee13b54}{\index{I\-P\-C\-Thread\-State@{I\-P\-C\-Thread\-State}!m\-Process@{m\-Process}}
+\index{m\-Process@{m\-Process}!IPCThreadState@{I\-P\-C\-Thread\-State}}
+\subsubsection[{m\-Process}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Process\-State}$\ast$ I\-P\-C\-Thread\-State\-::m\-Process\hspace{0.3cm}{\ttfamily [private]}}}\label{classIPCThreadState_aefae3c0f96244ce87f9289defee13b54}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{binder_8h}{binder.\-h}\end{DoxyCompactItemize}

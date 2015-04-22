@@ -1,0 +1,18 @@
+
++--------------+
+| add.c  sub.c |    add.h  sub.h
++--------------+      \      /
+    math.so            main.c
+
+
+# Make object code with -fPIC 
+gcc -fPIC -c add.c sub.c                 ---> add.o sub.o
+
+# .so filename should start with "lib" prefix
+gcc --shared add.o sub.o -o lib{name}.so ---> lib{name}.so
+
+# use it, the libname without prefix and .xx followed after -l
+gcc maic.c -l{name} -L{libpath}
+
+# execute with environment
+export LD_LIBRARY_PATH={libpath}
